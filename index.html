@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#bai1" role="tab" aria-controls="home"
+                aria-selected="true">Bài 1</a>
+        </li>
+
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#bai2" role="tab" aria-controls="profile"
+                aria-selected="false">Bài 2</a>
+        </li>
+
+
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#bai3" role="tab" aria-controls="contact"
+                aria-selected="false">Bài 3</a>
+        </li>
+
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#bai4" role="tab" aria-controls="contact"
+                aria-selected="false">Bài 4</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#bai5" role="tab" aria-controls=""
+                aria-selected="false">Bài 5</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+
+        <!-- BÀI 1 -->
+        <div class="tab-pane fade show active" id="bai1" role="tabpanel" aria-labelledby="home-tab">
+           
+            <div class="form-group">
+                <label for="">Nhập vào số ngày làm</label>
+                <input type="text" name="" id="soNgayLam" class="form-control" placeholder="Số ngày làm"
+                    aria-describedby="helpId">
+            </div>
+            <button type="button" class="btn btn-primary" id="btnTinhB1">Tiền lương tháng</button>
+            <div class="ketQua" id="ketQua" style="display:none">
+                <div id="luongThang"></div>
+            </div>
+        </div>
+        <!-- BÀI 2 -->
+        <div class="tab-pane fade" id="bai2" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="form-group">
+                <label for="">Nhập vào 5 số thực</label>
+                <input type="text" name="" id="R1" placeholder="R1">
+                <input type="text" name="" id="R2" placeholder="R2">
+                <input type="text" name="" id="R3" placeholder="R3">
+                <input type="text" name="" id="R4" placeholder="R4">
+                <input type="text" name="" id="R5" placeholder="R5">
+            </div>
+
+            <button type="button" class="btn btn-primary" id="btnTinhB2">Trung bình của 5 số trên</button>
+            <div class="ketQua" id="ketQuaB2" style="display:none">
+                <div id="Aver"></div>
+            </div>
+        </div>
+        <!-- BÀI 3 -->
+        <div class="tab-pane fade" id="bai3" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="form-group">
+                <label for="">Nhập vào số tiền cần quy đổi (USD)</label>
+                <input type="text" name="" id="nhapSoTien" class="form-control" placeholder="Nhập số tiền"
+                    aria-describedby="helpId">
+            </div>
+            <button type="button" class="btn btn-primary" id="btnTinhB3">Quy đổi</button>
+            <div class="ketQua" id="ketQuaB3" style="display:none">
+                <div id="tienQuyDoi"></div>
+            </div>
+        </div>
+        <!-- BÀI 4 -->
+        <div class="tab-pane fade" id="bai4" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="form-group">
+                <label for="">Chiều dài HCN</label>
+                <input type="text" name="" id="chieuDai" class="form-control" placeholder="Nhập vào chiều dài HCN"
+                    aria-describedby="helpId">
+            </div>
+            <div class="form-group">
+                <label for="">Chiều rộng HCN</label>
+                <input type="text" name="" id="chieuRong" class="form-control" placeholder="Nhập vào chiều rộng HCN"
+                    aria-describedby="helpId">
+            </div>
+            <button type="button" class="btn btn-primary" id="btnTinhB4">Tính nào</button>
+            <div class="ketQua" id="ketQuaB4" style="display:none">
+                <div id="chuVi"></div>
+                <div id="dienTich"></div>
+            </div>
+        </div>
+        <!-- BÀI 5 -->
+        <div class="tab-pane fade" id="bai5" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="form-group">
+                <label for="">Điền số nguyên có 2 số</label>
+                <input type="text" name="" id="soCoHaiChuSo" class="form-control" placeholder="Nhập số"
+                    aria-describedby="helpId">
+            </div>
+            <button type="button" class="btn btn-primary" id="btnTinhB5">Tính</button>
+            <div class="ketQua" id="ketQuaB5" style="display:none">
+                <div id="Sum"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./js.js"></script>
+</body>
+
+</html>
